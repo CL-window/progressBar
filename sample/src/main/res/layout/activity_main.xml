@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.cl.slack.sample.MainActivity">
+
+    <com.cl.slack.lib.ProgressbarView
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        app:p_height = "10dp"
+        app:p_width = "300dp"
+        app:p_shapeType="square"
+        app:p_progressColor="#00ff00"
+        app:p_progressBackColor="#777777"
+        app:p_progressSegmentColor="#008800"
+        app:p_progressDoubleSegColor="#770077"
+        app:p_showText = "true"
+        app:p_square_radius="8dp"
+        app:p_textSize="13sp"
+        app:p_textLowColor="#880055"
+        app:p_textMiddleColor="#008855"
+        app:p_textHighColor="#885500"
+        app:p_circle_radius="20dp"
+        app:p_circle_X_Y="30dp"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="delProgress"
+        android:text="del"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addProgress"
+        android:text="add"
+        />
+
+</LinearLayout>
