@@ -20,7 +20,7 @@
         app:p_shapeType="square"
         app:p_progressColor="#00ff00"
         app:p_progressBackColor="#777777"
-        app:p_progressSegmentColor="#008800"
+        app:p_progressSegmentColor="#ff0000"
         app:p_progressDoubleSegColor="#770077"
         app:p_showText = "true"
         app:p_square_radius="8dp"
@@ -46,7 +46,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="addProgress"
-        android:text="add"
+        android:text="pause"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="resumeProgress"
+        android:text="resume"
         />
 
 </LinearLayout>

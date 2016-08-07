@@ -16,23 +16,30 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mProgressbarView = ((ProgressbarView) findViewById(R.id.progressbar));
-        mProgressbarView.setProgress(progress += 10);//  ,true);
-        mProgressbarView.setProgress(progress += 10);//  ,true);
-        mProgressbarView.setProgress(progress += 10);//  ,true);
+//        mProgressbarView.setProgress(progress += 10);//  ,true);
+//        mProgressbarView.setProgress(progress += 10);//  ,true);
+//        mProgressbarView.setProgress(progress += 10);//  ,true);
 
+        mProgressbarView.setMax(100);
 
     }
 
     public void delProgress(View view) {
-        if(progress > 0){
-            progress -= 10;
-            mProgressbarView.removeProgress(progress);
-        }
+//        if(progress > 0){
+//            progress -= 10;
+//            mProgressbarView.removeProgress(progress);
+//        }
+        mProgressbarView.removeProgress();
     }
 
     public void addProgress(View view) {
-        if(progress < 100){
-            mProgressbarView.setProgress(progress += 10);// ,true);
-        }
+//        if(progress < 100){
+//            mProgressbarView.setProgress(progress += 10);// ,true);
+//        }
+        mProgressbarView.onCountPause();
+    }
+
+    public void resumeProgress(View view) {
+        mProgressbarView.onCountResume();
     }
 }
