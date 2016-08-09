@@ -2,6 +2,7 @@
 主要是分段时progressbar的颜色不一样
 Canvas：https://developer.android.com/reference/android/graphics/Canvas.html
 mProgressbarView.setProgress(30,true); 和 mProgressbarView.setProgress(50); 同一个控件只能调用一个
+
 使用 ： compile 'com.cl.slack:progressbar:1.0.0'
 
         <attr name="p_width" format="dimension"/> <!-- 控件宽度 -->
